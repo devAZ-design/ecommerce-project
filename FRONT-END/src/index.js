@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Navbar from './Components/Navbar/Navbar';
-
+import App from './App';
+import ShopContextProvider from './Context/ShopContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-    <Navbar />
-  </>
+  <ShopContextProvider>
+    <App />
+  </ShopContextProvider>
 );
+
 
 
